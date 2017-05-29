@@ -1,0 +1,4 @@
+This assignment uses a closed API. To access this API, you will require the following two keys:
+Your group's unique Ripley API private key: [KeyA]
+Your group's unique Ripley API public key: [KeyB]
+It is essential that these keys are kept confidential, and not shared with anyone outside of this group. These keys are unique, and if they are misplaced or revealed to students not in your group, they cannot be replaced.

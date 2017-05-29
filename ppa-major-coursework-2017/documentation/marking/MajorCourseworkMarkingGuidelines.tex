@@ -1,0 +1,201 @@
+%&pdflatex
+\documentclass[11pt]{article}
+
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}%
+
+\title{Programming Practice and Applications (PPA) \\ Major Piece of Coursework (Group Project), CWX \\ (15\%, 100 marks) \\ \textbf{Mark scheme} }
+%\author{Martin Chapman (martin.chapman@kcl.ac.uk)}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\section{Overview}
+
+This coursework assignment is worth 15\% of your final module mark for PPA. Part of this grade will come from a solution submitted collectively, and part of this grade will come from an individual report, submitted individually. Table \ref{table:overview} shows how the marks for this assignment will be awarded.
+
+\begin{table}[h!]
+
+	\begin{center}
+
+		\begin{tabular}{p{4cm}p{6cm}p{3cm}}
+			\hline
+			Requirement Number & Requirement Description & Marks Available \\
+			\hline
+			0 & \textbf{Setting up Github} & \textbf{5} \\
+			\hline
+			\hline
+			1 & \textbf{Main Window} & \textbf{5} \\
+			\hline
+			\hline
+			2 & \textbf{Panel 1: Welcome} & \textbf{5} \\
+			\hline
+			\hline
+			3 & \textbf{Panel 2: Map} & \textbf{20} \\
+			3.1 & Interactive map & 10 \\
+			3.2 & List of sightings & 5 \\
+			3.3 & Sorting sightings & 5 \\
+			\hline
+			\hline
+			4 & \textbf{Panel 3: Statistics} & \textbf{25} \\
+			4.1 & Panel behaviour & 6 \\
+			4.2 & Base statistics & 8 \\
+			4.3 & Additional statistics & 8 \\
+			4.4 & Saving preferences & 3 \\
+			\hline
+			\hline
+			5 & \textbf{Panel 4: Surprise Me} & \textbf{5} \\
+			\hline
+			\hline
+			6 & \textbf{Individual Project Report} & \textbf{15} \\
+			\hline
+			\hline
+			7 & \textbf{Code Quality} & \textbf{20} \\
+			\hline
+			7.1 & Documentation & 10 \\
+			\hline
+			7.2 & Structure of code (including MVC) & 8 \\
+			\hline
+			7.3 & Minimising API calls & 2 \\
+			\hline
+			
+		\end{tabular}
+
+		\caption{Mark scheme overview}
+		\label{table:overview}
+
+	\end{center}
+
+\end{table}%
+
+\section{Mark Ranges}
+
+Each requirement is marked in the range of A -- F, where A is full marks and an F is a fail. The meaning of these marks, in the context of different requirements, is listed in this section.
+
+\subsection{Marking Scheme for Requirements 1 - 5}
+
+\begin{enumerate}[label=(\Alph*)]
+
+	\item The requirement is completely implemented, there are no semantic errors or inefficiencies (logical bugs) that can be identified.
+
+	\item The requirement is implemented, but some minor functionality may not have been completed. The parts that have been implemented, have no identifiable logical bugs. Alternatively,
+the requirement has been implemented completely, but with some minor logical bugs.
+	
+	\item The requirement is implemented, but with some minor logical bugs and some missing minor
+functionality.
+	
+	\item While major parts of the requirement are missing, some minor functionality has been
+implemented. What has been implemented does not show any logical bugs.
+	
+	\item Major parts of the requirement are missing and there are some minor logical bugs.
+	
+	\item Major parts of the requirement are missing and there are some major logical bugs. Alternatively,
+nothing has been implemented at all.
+
+\end{enumerate}
+
+\subsection{Marking Scheme for Requirement 7.1}
+
+\emph{The use of javadoc}
+
+\begin{enumerate}[label=(\Alph*)]
+
+	\item All public classes, interfaces, methods, and attributes are provided with concise and useful documentation comments. These comments make judicious use of additional tags such as @param, @return, @see, or \{@link\}.
+
+	\item All public classes, methods, and attributes are provided with concise and useful documentation comments.
+
+	\item While not all public elements are documented, those which are documented well. The elements which are not documented are of less importance to the design of the application than the ones which have been.
+
+	\item Some elements are documented, some of these document comments may even use additional tags. The majority of elements, including key elements, is undocumented.
+
+	\item Only very few elements are documented. In some places, these comments may be normal comments rather than javadoc comments.
+
+	\item There are no javadoc comments.
+
+\end{enumerate}
+
+\textbf{Marks for inline comments will also be implicitly awarded.}
+
+\subsection{Marking Scheme for Requirement 7.2}
+
+\emph{The structure of your code}
+
+\begin{enumerate}[label=(\Alph*)]
+
+	\item The code is well structured into a set of classes (including anonymous and inner classes, where appropriate)  and methods. The code also avoids repetition and lengthy conditionals. At the same time, the code is not over-fragmented into overly small classes: for each class a clear responsibility can still be identified.
+
+	\item The code is well structured into a set of classes and methods. There may be some code repetition or lengthy conditionals OR some over-fragmentation.
+
+	\item The code is structured into a set of classes and methods. There may be some code repetition or lengthy conditionals AND some over-fragmentation.
+
+	\item While all code may be contained in a single file, using separate classes only where mandated by the Java API, code repetition is completely avoided by using separate methods with appropriate parameters.
+
+	\item While all code is contained in a single file, using separate classes only where mandated by the Java API, code repetition is partially avoided by using separate methods with appropriate parameters.
+
+	\item All code is included in the main method of the main class except where this is impossible because of requirements of the Java API.
+
+\end{enumerate}
+
+\subsection{Marking Scheme for Requirement 6}
+
+\emph{The individual report}
+
+As indicated in Table \ref{table:overview}, 85\% of the major coursework mark is attributed to the solution submitted collectively by your group, for which each member will receive the same grade. 15\%, however, is attributed to each group member individually, based upon a written report, for which each group member will receive a different grade. The report will also be marked using an A -- F scale:
+
+\begin{enumerate}[label=(\Alph*)]
+
+\item The report is clearly structured into sections, which flow well as a narrative (i.e. introduction through to sets of analyses through to summary and conclusions). A domain analysis, hierarchical task analysis, virtual windows and a global navigation structure are all included. Each diagram is accompanied by a suitable section of text detailing what has been learnt during the construction of the diagram.
+
+\item The report is structured into sections, but the narrative they present isn't particularly intuitive. One of the analyses or one of the diagrams is missing. Each diagram is accompanied by a suitable section of text detailing why this analysis or design approach was taken.
+
+\item The report is organised into sections, but they are not in the correct order and therefore do not present a suitable narrative. Two of the analyses or diagrams are missing. Each diagram is accompanied by a suitable section of text detailing how the analysis or design approach was taken.
+
+\item The report lacks any clear sections and therefore has no narrative. Three of the analyses or diagrams are missing. Each diagram is accompanied by a suitable section of text that elaborates on the diagram shown.
+
+\item A report is submitted, with some vaguely relevant content, but all of the analysis or diagrams are missing. 
+
+\item No report is submitted.
+
+\end{enumerate}
+
+\section{Exceptional Cases}
+
+\begin{enumerate}
+
+	\item All group members will receive a mark of zero if the API acknowledgement string is not shown.
+	
+	\item All group members will receive a mark of zero if the Ripley JAR file is not used to access the Ripley API, and instead the API is accessed via other means.
+	
+	\item All group members will receive a mark of zero if the required API data is acquired from a different source.
+
+	\item All group members will receive a 10\% deduction to their grade if their submitted code does not run, and minor debugging is required to run the code without exception\footnote{The definition of minor is as the discretion of the examiners.}.
+	
+	\item All group members will receive a 60\% deduction to their grade (i.e. the mark will be capped at 40\%) if significant debugging would be required to run their submitted code without exception.
+	
+\end{enumerate}
+
+\subsection{Mark Moderation}
+
+\begin{enumerate}
+
+	\item A student will face a mark reduction of up to 60\% if sufficient evidence is obtained from \emph{all} group members, via \texttt{TeamFeedback}, that they did not contribute sufficiently to the submitted solution.
+	
+	\item A student will receive a mark of zero if sufficient evidence is obtained from \emph{all} group members, via \texttt{TeamFeedback}, that they did not contribute at all to the submitted solution.
+	
+	\item A student will face a mark reduction of up to 60\% if they do not push a comparable number of commits to the rest of their team members to their remote repository (hosted on \texttt{Github}). All team members are expected to have a resonable number of commits ($> 10$).
+	
+	\item A student will receive a mark of zero if they do not push anything to their remote repository (hosted on \texttt{Github}).
+
+\end{enumerate}
+
+\end{document}
